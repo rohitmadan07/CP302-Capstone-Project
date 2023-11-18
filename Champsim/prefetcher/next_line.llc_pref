@@ -1,0 +1,97 @@
+#include "cache.h"
+
+void CACHE::llc_prefetcher_initialize() 
+{
+    cout << "LLC Next Line Prefetcher" << endl;
+    
+    count_load_hit=0; count_load_miss=0; count_store_hit=0; count_store_miss=0; count_else_hit=0; count_else_miss=0;
+}
+
+uint32_t CACHE::llc_prefetcher_operate(uint64_t addr, uint64_t ip, uint8_t cache_hit, uint8_t type, uint32_t metadata_in)
+{
+  if (cache_hit)
+  {
+    if (type == 0)
+    count_load_hit++;
+    else if (type == 1)
+    count_store_hit++;
+    else
+    count_else_hit++;    
+  }
+  else
+  {
+    if (type == 0)
+    count_load_miss++;
+    else if (type == 1)
+    count_store_miss++;
+    else
+    count_else_miss++;
+  }
+
+  if (!cache_hit)
+  {
+  uint64_t pf_addr = ((addr>>LOG2_BLOCK_SIZE)+1) << LOG2_BLOCK_SIZE;
+  prefetch_line(ip, addr, pf_addr, FILL_LLC, 0);
+  }
+
+  return metadata_in;
+}
+
+uint32_t CACHE::llc_prefetcher_cache_fill(uint64_t addr, uint32_t set, uint32_t way, uint8_t prefetch, uint64_t evicted_addr, uint32_t metadata_in)
+{
+  return metadata_in;
+}
+
+void CACHE::llc_prefetcher_final_stats()
+{
+  cout << "LLC Next Line Prefetcher Final Stats: " << endl << endl;
+  cout << "Queue level details" << endl << endl;
+  cout << " RQ_Merged: " << setw(10) << RQ.MERGED << " RQ_Access: " << setw(10) << RQ.ACCESS << " RQ_FULL: " << setw(10) << RQ.FULL << " RQ_ToCache: " << setw(10) << RQ.TO_CACHE << " RQ_FORWARDED: " << setw(10) << RQ.FORWARD <<  endl;
+  cout << " WQ_Merged: " << setw(10) << WQ.MERGED << " WQ_Access: " << setw(10) << WQ.ACCESS << " WQ_FULL: " << setw(10) << WQ.FULL << " WQ_ToCache: " << setw(10) << WQ.TO_CACHE << " WQ_FORWARDED: " << setw(10) << WQ.FORWARD<< endl;
+  cout << " PQ_Merged: " << setw(10) << PQ.MERGED << " PQ_Access: " << setw(10) << PQ.ACCESS << " PQ_FULL: " << setw(10) << PQ.FULL << " PQ_ToCache: " << setw(10) << PQ.TO_CACHE << " PQ_FORWARDED: " << setw(10) << PQ.FORWARD<< endl;
+  cout << endl << "############Universal_Stats##############" << endl;
+  cout << endl;
+  for(int i=0; i<NUM_TYPES;i++)
+  {
+    if (i == 0)
+    cout << "LOAD ";
+    else if (i ==1)
+    cout << "RFO " ;
+    else if (i == 2)
+    cout << "PREFETCH ";
+    else
+    cout << "WRITEBACK ";
+  
+  cout << " Access: " << setw(10) << ACCESS[i] << " HIT: " << setw(10) << HIT[i] << " MISS: " << setw(10) << MISS[i] << " STALL: " << setw(10) << STALL[i] << " MSHR_MERGED: " << setw(10) << MSHR_MERGED[i] << endl;
+  cout << endl;
+  }
+
+  cout << " load_hit: " << count_load_hit << setw(10) << " load_miss: " << count_load_miss << setw(10) << " store_hit: " << count_store_hit << setw(10) << " store_miss: " << count_store_miss << setw(10) << " count_else: " << count_else_hit << setw(10) << " count_else: " << count_else_miss << endl;
+  cout << endl;
+  cout << " PQ_overflow: " << PQ_over_flow << setw(10) << " PQ_boundry_check: " << outside_baundary << endl;
+  cout << endl;
+
+  cout << " Bucket " << setw(30) << " cumulative_count " << setw(30) << " No_of_Late_PKT " << setw(30) << "Average" << endl;
+  
+  for(int i =0; i<11;i++)
+  {
+    if (LateBy[i] == 0)
+    {
+      cout << "[" << i*20 << ":" << ((i+1)*20-1) << "]" << setw(30) << counter[i] << setw(30) << LateBy[i] << setw(30) << 0 << endl;
+      Avg[i] = 0;
+    }
+    else
+    {
+      cout << "[" << i*20 << ":" << ((i+1)*20-1) << "]" << setw(30) << counter[i] << setw(30) << LateBy[i] << setw(30) << counter[i]/LateBy[i] << endl;
+      Avg[i] = counter[i]/LateBy[i];
+    }
+  }
+  cout << endl;
+  cout << " RQ_Late_count " << setw(10) << counter_0 << endl;
+  uint32_t Total_Avg = 0;
+  for (int i =0; i<11; i++)
+  {
+    Total_Avg += LateBy[i] * Avg[i];
+  }
+  cout << " Average no of cycles a packet late: " << Total_Avg/pf_usefull_late << endl;
+}

@@ -1,0 +1,311 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 50000000
+Simulation Instructions: 200000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 3200 MT/s
+
+CPU 0 runs /home/nupur/Champsim_timeliness/dpc3_traces/620.omnetpp_s-874B.champsimtrace.xz
+CPU 0 Bimodal branch predictor
+Heartbeat CPU 0 instructions: 10000001 cycles: 5585911 heartbeat IPC: 1.79022 cumulative IPC: 1.79022 (Simulation time: 0 hr 0 min 36 sec) 
+counter 10000000
+PREFETCH_HIT_RATE, 0.350167, 
+BLOCKS_TO_PREFETCH 4
+Heartbeat CPU 0 instructions: 20000000 cycles: 11171981 heartbeat IPC: 1.79017 cumulative IPC: 1.79019 (Simulation time: 0 hr 1 min 11 sec) 
+Heartbeat CPU 0 instructions: 30000002 cycles: 16750875 heartbeat IPC: 1.79247 cumulative IPC: 1.79095 (Simulation time: 0 hr 1 min 47 sec) 
+counter 20000000
+PREFETCH_HIT_RATE, 0.430154, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 40000000 cycles: 22345749 heartbeat IPC: 1.78735 cumulative IPC: 1.79005 (Simulation time: 0 hr 2 min 23 sec) 
+Heartbeat CPU 0 instructions: 50000000 cycles: 27933060 heartbeat IPC: 1.78977 cumulative IPC: 1.78999 (Simulation time: 0 hr 2 min 59 sec) 
+
+Warmup complete CPU 0 instructions: 50000001 cycles: 27933061 (Simulation time: 0 hr 2 min 59 sec) 
+
+counter 10000000
+PREFETCH_HIT_RATE, 1, 
+BLOCKS_TO_PREFETCH 16
+counter 20000000
+PREFETCH_HIT_RATE, 0.472096, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 60000001 cycles: 57171418 heartbeat IPC: 0.342017 cumulative IPC: 0.342016 (Simulation time: 0 hr 3 min 37 sec) 
+counter 30000000
+PREFETCH_HIT_RATE, 0.450401, 
+BLOCKS_TO_PREFETCH 6
+counter 40000000
+PREFETCH_HIT_RATE, 0.442861, 
+BLOCKS_TO_PREFETCH 6
+counter 50000000
+PREFETCH_HIT_RATE, 0.447709, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 70000001 cycles: 85553492 heartbeat IPC: 0.352335 cumulative IPC: 0.347099 (Simulation time: 0 hr 4 min 14 sec) 
+counter 60000000
+PREFETCH_HIT_RATE, 0.452942, 
+BLOCKS_TO_PREFETCH 6
+counter 70000000
+PREFETCH_HIT_RATE, 0.437005, 
+BLOCKS_TO_PREFETCH 6
+counter 80000000
+PREFETCH_HIT_RATE, 0.44112, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 80000002 cycles: 114341546 heartbeat IPC: 0.347366 cumulative IPC: 0.347188 (Simulation time: 0 hr 4 min 51 sec) 
+counter 90000000
+PREFETCH_HIT_RATE, 0.449776, 
+BLOCKS_TO_PREFETCH 6
+counter 100000000
+PREFETCH_HIT_RATE, 0.436902, 
+BLOCKS_TO_PREFETCH 6
+counter 110000000
+PREFETCH_HIT_RATE, 0.433654, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 90000001 cycles: 142688952 heartbeat IPC: 0.352766 cumulative IPC: 0.348566 (Simulation time: 0 hr 5 min 28 sec) 
+counter 120000000
+PREFETCH_HIT_RATE, 0.438785, 
+BLOCKS_TO_PREFETCH 6
+counter 130000000
+PREFETCH_HIT_RATE, 0.437651, 
+BLOCKS_TO_PREFETCH 6
+counter 140000000
+PREFETCH_HIT_RATE, 0.435352, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 100000000 cycles: 172052207 heartbeat IPC: 0.340562 cumulative IPC: 0.346935 (Simulation time: 0 hr 6 min 6 sec) 
+counter 150000000
+PREFETCH_HIT_RATE, 0.449394, 
+BLOCKS_TO_PREFETCH 6
+counter 160000000
+PREFETCH_HIT_RATE, 0.439201, 
+BLOCKS_TO_PREFETCH 6
+counter 170000000
+PREFETCH_HIT_RATE, 0.42109, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 110000000 cycles: 201063150 heartbeat IPC: 0.344698 cumulative IPC: 0.34656 (Simulation time: 0 hr 6 min 44 sec) 
+counter 180000000
+PREFETCH_HIT_RATE, 0.437028, 
+BLOCKS_TO_PREFETCH 6
+counter 190000000
+PREFETCH_HIT_RATE, 0.449149, 
+BLOCKS_TO_PREFETCH 6
+counter 200000000
+PREFETCH_HIT_RATE, 0.445963, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 120000000 cycles: 229675376 heartbeat IPC: 0.349501 cumulative IPC: 0.346977 (Simulation time: 0 hr 7 min 21 sec) 
+counter 210000000
+PREFETCH_HIT_RATE, 0.443722, 
+BLOCKS_TO_PREFETCH 6
+counter 220000000
+PREFETCH_HIT_RATE, 0.450463, 
+BLOCKS_TO_PREFETCH 6
+counter 230000000
+PREFETCH_HIT_RATE, 0.449591, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 130000000 cycles: 258647620 heartbeat IPC: 0.345158 cumulative IPC: 0.346749 (Simulation time: 0 hr 7 min 58 sec) 
+counter 240000000
+PREFETCH_HIT_RATE, 0.453912, 
+BLOCKS_TO_PREFETCH 6
+counter 250000000
+PREFETCH_HIT_RATE, 0.451443, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 140000001 cycles: 287325629 heartbeat IPC: 0.348699 cumulative IPC: 0.346964 (Simulation time: 0 hr 8 min 36 sec) 
+counter 260000000
+PREFETCH_HIT_RATE, 0.444231, 
+BLOCKS_TO_PREFETCH 6
+counter 270000000
+PREFETCH_HIT_RATE, 0.4486, 
+BLOCKS_TO_PREFETCH 6
+counter 280000000
+PREFETCH_HIT_RATE, 0.447177, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 150000002 cycles: 316236979 heartbeat IPC: 0.345885 cumulative IPC: 0.346856 (Simulation time: 0 hr 9 min 13 sec) 
+counter 290000000
+PREFETCH_HIT_RATE, 0.43803, 
+BLOCKS_TO_PREFETCH 6
+counter 300000000
+PREFETCH_HIT_RATE, 0.448405, 
+BLOCKS_TO_PREFETCH 6
+counter 310000000
+PREFETCH_HIT_RATE, 0.437695, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 160000000 cycles: 345378719 heartbeat IPC: 0.34315 cumulative IPC: 0.346516 (Simulation time: 0 hr 9 min 51 sec) 
+counter 320000000
+PREFETCH_HIT_RATE, 0.450443, 
+BLOCKS_TO_PREFETCH 6
+counter 330000000
+PREFETCH_HIT_RATE, 0.436483, 
+BLOCKS_TO_PREFETCH 6
+counter 340000000
+PREFETCH_HIT_RATE, 0.444649, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 170000000 cycles: 373948034 heartbeat IPC: 0.350026 cumulative IPC: 0.346806 (Simulation time: 0 hr 10 min 28 sec) 
+counter 350000000
+PREFETCH_HIT_RATE, 0.455347, 
+BLOCKS_TO_PREFETCH 6
+counter 360000000
+PREFETCH_HIT_RATE, 0.448741, 
+BLOCKS_TO_PREFETCH 6
+counter 370000000
+PREFETCH_HIT_RATE, 0.449553, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 180000000 cycles: 402638180 heartbeat IPC: 0.348552 cumulative IPC: 0.346939 (Simulation time: 0 hr 11 min 5 sec) 
+counter 380000000
+PREFETCH_HIT_RATE, 0.451063, 
+BLOCKS_TO_PREFETCH 6
+counter 390000000
+PREFETCH_HIT_RATE, 0.452057, 
+BLOCKS_TO_PREFETCH 6
+counter 400000000
+PREFETCH_HIT_RATE, 0.452454, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 190000003 cycles: 431486063 heartbeat IPC: 0.346646 cumulative IPC: 0.346918 (Simulation time: 0 hr 11 min 42 sec) 
+counter 410000000
+PREFETCH_HIT_RATE, 0.457226, 
+BLOCKS_TO_PREFETCH 6
+counter 420000000
+PREFETCH_HIT_RATE, 0.450366, 
+BLOCKS_TO_PREFETCH 6
+counter 430000000
+PREFETCH_HIT_RATE, 0.460079, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 200000000 cycles: 460091954 heartbeat IPC: 0.349578 cumulative IPC: 0.347095 (Simulation time: 0 hr 12 min 19 sec) 
+counter 440000000
+PREFETCH_HIT_RATE, 0.454965, 
+BLOCKS_TO_PREFETCH 6
+counter 450000000
+PREFETCH_HIT_RATE, 0.454177, 
+BLOCKS_TO_PREFETCH 6
+counter 460000000
+PREFETCH_HIT_RATE, 0.447819, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 210000002 cycles: 488922968 heartbeat IPC: 0.346849 cumulative IPC: 0.347079 (Simulation time: 0 hr 12 min 56 sec) 
+counter 470000000
+PREFETCH_HIT_RATE, 0.442174, 
+BLOCKS_TO_PREFETCH 6
+counter 480000000
+PREFETCH_HIT_RATE, 0.446257, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 220000000 cycles: 517856156 heartbeat IPC: 0.345624 cumulative IPC: 0.346993 (Simulation time: 0 hr 13 min 34 sec) 
+counter 490000000
+PREFETCH_HIT_RATE, 0.4355, 
+BLOCKS_TO_PREFETCH 6
+counter 500000000
+PREFETCH_HIT_RATE, 0.438336, 
+BLOCKS_TO_PREFETCH 6
+counter 510000000
+PREFETCH_HIT_RATE, 0.455675, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 230000002 cycles: 546116941 heartbeat IPC: 0.353847 cumulative IPC: 0.347367 (Simulation time: 0 hr 14 min 11 sec) 
+counter 520000000
+PREFETCH_HIT_RATE, 0.444371, 
+BLOCKS_TO_PREFETCH 6
+counter 530000000
+PREFETCH_HIT_RATE, 0.44292, 
+BLOCKS_TO_PREFETCH 6
+counter 540000000
+PREFETCH_HIT_RATE, 0.451375, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 240000001 cycles: 574832420 heartbeat IPC: 0.348244 cumulative IPC: 0.347413 (Simulation time: 0 hr 14 min 48 sec) 
+counter 550000000
+PREFETCH_HIT_RATE, 0.451117, 
+BLOCKS_TO_PREFETCH 6
+counter 560000000
+PREFETCH_HIT_RATE, 0.450715, 
+BLOCKS_TO_PREFETCH 6
+counter 570000000
+PREFETCH_HIT_RATE, 0.452563, 
+BLOCKS_TO_PREFETCH 6
+Heartbeat CPU 0 instructions: 250000000 cycles: 603469890 heartbeat IPC: 0.349193 cumulative IPC: 0.347502 (Simulation time: 0 hr 15 min 25 sec) 
+Finished CPU 0 instructions: 200000003 cycles: 575536830 cumulative IPC: 0.347502 (Simulation time: 0 hr 15 min 25 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 0.347502 instructions: 200000003 cycles: 575536830
+L1D TOTAL     ACCESS:   84343637  HIT:   80701541  MISS:    3642096
+L1D LOAD      ACCESS:   48696759  HIT:   45535323  MISS:    3161436         0
+L1D RFO       ACCESS:   35646878  HIT:   35166218  MISS:     480660         0
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0         0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0         0
+L1D AVERAGE MISS LATENCY: 111.523 cycles
+L1I TOTAL     ACCESS:   35749943  HIT:   35671707  MISS:      78236
+L1I LOAD      ACCESS:   35749943  HIT:   35671707  MISS:      78236         0
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0         0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0         0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0         0
+L1I AVERAGE MISS LATENCY: 32.4409 cycles
+L2C TOTAL     ACCESS:    5523434  HIT:    3090034  MISS:    2433400
+L2C LOAD      ACCESS:    3239627  HIT:    1122682  MISS:    2116945         0
+L2C RFO       ACCESS:     480657  HIT:     166350  MISS:     314307         0
+L2C PREFETCH  ACCESS:          0  HIT:          0  MISS:          0         0
+L2C WRITEBACK ACCESS:    1803150  HIT:    1801002  MISS:       2148         0
+L2C AVERAGE MISS LATENCY: 137.43 cycles
+ AMAT: 1.44056 cycles
+LLC TOTAL     ACCESS:    9755158  HIT:    4753419  MISS:    5001739
+LLC LOAD      ACCESS:    2116943  HIT:     839398  MISS:    1277545         0
+LLC RFO       ACCESS:     314305  HIT:     104896  MISS:     209409         0
+LLC PREFETCH  ACCESS:    6115962  HIT:    2732091  MISS:    3383871         0
+LLC WRITEBACK ACCESS:    1207948  HIT:    1077034  MISS:     130914         0
+LLC PREFETCH  REQUESTED:   12828981  ISSUED:   12711335  USEFUL:     716967  USELESS:    3242710 pf_FILL:    3976933
+LLC ON_TIME:     716967  LATE:      15622  LATE_CONSIDER:      15622
+LLC AVERAGE MISS LATENCY: 186.049 cycles
+ AMAT: 5.10182 cycles
+Major fault: 0 Minor fault: 47278
+LLC Next Line Prefetcher Final Stats: 
+
+Queue level details
+
+ RQ_Merged:          0 RQ_Access:    2431252 RQ_FULL:          0 RQ_ToCache:    2431248 RQ_FORWARDED:          0
+ WQ_Merged:          0 WQ_Access:    1207948 WQ_FULL:          0 WQ_ToCache:    1207948 WQ_FORWARDED:          4
+ PQ_Merged:    5308202 PQ_Access:   12711335 PQ_FULL:          0 PQ_ToCache:    7403133 PQ_FORWARDED:          0
+
+############Universal_Stats##############
+
+LOAD  Access:    2116945 HIT:     839400 MISS:    1277545 STALL:          0 MSHR_MERGED:      15059
+
+RFO  Access:     314307 HIT:     104898 MISS:     209409 STALL:          0 MSHR_MERGED:        563
+
+PREFETCH  Access:    6370608 HIT:    2732091 MISS:    3638517 STALL:          0 MSHR_MERGED:     239024
+
+WRITEBACK  Access:    1207948 HIT:    1077034 MISS:     130914 STALL:          0 MSHR_MERGED:          0
+
+ load_hit: 0 load_miss: 0 store_hit: 0 store_miss: 0 count_else: 0 count_else: 0
+
+ PQ_overflow: 71509 PQ_boundry_check: 46137
+
+ Bucket              cumulative_count                No_of_Late_PKT                        Average
+[0:19]                         24688                          2466                            10
+[20:39]                         92910                          3055                            30
+[40:59]                         86717                          1766                            49
+[60:79]                        109744                          1606                            68
+[80:99]                        122763                          1350                            90
+[100:119]                        187756                          1693                           110
+[120:139]                        259739                          2001                           129
+[140:159]                         92190                           620                           148
+[160:179]                         76281                           453                           168
+[180:199]                         41867                           223                           187
+[200:219]                         98559                           389                           253
+
+ RQ_Late_count          0
+ Average no of cycles a packet late: 75
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:    1855824  ROW_BUFFER_MISS:    3014974
+ DBUS_CONGESTED:    2424883
+ WQ ROW_BUFFER_HIT:     151819  ROW_BUFFER_MISS:     869434  FULL:          0
+
+ AVG_CONGESTED_CYCLE: 6
+
+CPU 0 Branch Prediction Accuracy: 95.8024% MPKI: 8.73229 Average ROB Occupancy at Mispredict: 74.8859
+
+Branch types
+NOT_BRANCH: 158393552 79.1968%
+BRANCH_DIRECT_JUMP: 2276304 1.13815%
+BRANCH_INDIRECT: 671328 0.335664%
+BRANCH_CONDITIONAL: 26768026 13.384%
+BRANCH_DIRECT_CALL: 3559126 1.77956%
+BRANCH_INDIRECT_CALL: 2386088 1.19304%
+BRANCH_RETURN: 5945216 2.97261%
+BRANCH_OTHER: 0 0%
+
